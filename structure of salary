@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+int id;
+scanf("%d", &id);  
+for(int i=0; i<n; i++){
+    
+    if(employees[i].id == id){
+        printf("Name \t: ");
+        printf("%s \n",employees[i].name);
+ 
+        printf("Id \t: ");
+        printf("%d \n",employees[i].id);
+ 
+        printf("Salary \t: ");
+        printf("%d \n",employees[i].salary);
+    }
+}
