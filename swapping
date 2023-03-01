@@ -1,0 +1,22 @@
+#include<stdio.h>
+void cylic_swap(int *a,int *b, int *c);
+int main()
+{
+	int a,b,c;
+	printf("enter the values of a,b and c:");
+	scanf("%d %d %d",&a,&b,&c);
+	printf("\nbefore_swaping:\n");
+	printf("\na=%d\n \nb=%d\n \nc=%d\n",a,b,c);
+	swap(&a,&b,&c);
+	printf("\nafter_swaping:\n");
+	printf("\na=%d\n \nb=%d\n \nc=%d\n",a,b,c);
+	return 0;
+}
+swap(int *x,int *y,int *z)
+{
+	int temp;
+	temp=*y;
+	*x=*y;
+	*y=*z;
+	*z=temp;
+}
